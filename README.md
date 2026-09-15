@@ -17,7 +17,7 @@ Open http://127.0.0.1:8088/. Check mobile and desktop widths, light/dark appeara
 
 Do not enable GitHub Pages or push draft content to a publishing branch. Complete every field and review in release.json, then remove the draft banners and noindex metadata. Never put private customer information, credentials, or support requests in this repository.
 
-- Supply the legal operator, mailing address, public support email, governing state, and effective date consistently. Replace the deletion mailto address as well as visible text.
+- The legal operator is Pacai Technologies LLC. Supply the mailing address, public support email, governing state, and effective date consistently. Replace the deletion mailto address as well as visible text.
 - Verify actual Supabase hosting regions, backups, auth/security logs, and deletion schedules. Verify OpenAI model/account data controls, training opt-in settings, image safety retention exceptions, and processing regions. Do not promise zero retention without verification.
 - Verify RevenueCat identifiers, diagnostics, transaction retention, and customer deletion handling. The current app deletes Supabase data; it does not automatically erase RevenueCat/store records or cancel subscriptions.
 - Establish a monitored deletion mailbox. Verify ownership using the account's email or another appropriate recovery process; never ask for passwords. Track requests privately, apply relevant deadlines, delete through the trusted account-deletion workflow, address provider records/exceptions, and confirm completion. Document the actual handling period before publishing.
