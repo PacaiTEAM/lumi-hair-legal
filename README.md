@@ -8,7 +8,7 @@ Use Python 3.10 or newer. No JavaScript, build dependencies, third-party fonts, 
 
 ```sh
 python3 check.py
-python3 -m http.server 8088 --bind 127.0.0.1
+python3 -m http.server 8098 --bind 127.0.0.1
 ```
 
 Open http://127.0.0.1:8088/. Check mobile and desktop widths, light/dark appearance, keyboard focus, zoom, and every navigation link. The support and deletion email is lumihair.help@outlook.com. Verify mailbox monitoring and request handling before publication.
@@ -41,7 +41,7 @@ python3 check.py --release
 
 Once it passes, commit approved content to main and push. In GitHub choose Settings → Pages → Deploy from a branch → main → /(root). Enable/verify HTTPS. Expected base URL: https://pacaiteam.github.io/lumi-hair-legal/ (confirm the actual URL if the organization has a custom domain). The site uses relative links and supports the project subpath.
 
-Use /privacy/, /terms/, and /delete-account/ URLs in store metadata. Configure Privacy Policy and Terms links in the RevenueCat dashboard paywall footer as well as the app-owned footer. Verify both Expo Go and native paywall presentation.
+Use /privacy/, /terms/, and /delete-account/ URLs in store metadata. For native RevenueCat paywalls, configure footer buttons as Navigate to → URL → Deep Link with `lumihair://legal/privacy` and `lumihair://legal/terms` (optional deletion information: `lumihair://legal/delete-account`). These open bundled in-app sheets. Keep HTTPS URLs for store metadata, project public policy settings, web paywalls, and older app builds without the routes. Target native deep-link buttons only to supported app versions. Verify both Expo Go and native paywall presentation.
 
 Keep Pages disabled while placeholders remain. The branch-based Pages publisher itself does not run check.py: an operator must pass the release check before every publishing push. For a future enforced deployment gate, switch to a GitHub Actions publishing workflow rather than branch publishing.
 
