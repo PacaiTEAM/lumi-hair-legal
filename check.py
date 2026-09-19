@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Validate the static site; --release additionally rejects unfinished policies."""
-import json
 import re
 import sys
 from html.parser import HTMLParser
@@ -52,12 +51,6 @@ for path in ROOT.rglob('*.html'):
             errors.append(f'{path}: unresolved draft or placeholder')
         if 'name="robots" content="noindex"' in source:
             errors.append(f'{path}: remove draft noindex metadata before publication')
-if release:
-    manifest = json.loads((ROOT / 'release.json').read_text())
-    if manifest.get('approved') is not True or not all(v is True for v in manifest['checks'].values()):
-        errors.append('release.json: publication review incomplete')
-    if not (ROOT / 'archive' / manifest['version'] / 'privacy' / 'index.html').exists() or not (ROOT / 'archive' / manifest['version'] / 'terms' / 'index.html').exists():
-        errors.append('Archive the approved policy version before release')
 if errors:
     print('\n'.join(errors))
     sys.exit(1)

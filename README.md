@@ -11,11 +11,11 @@ python3 check.py
 python3 -m http.server 8098 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8088/. Check mobile and desktop widths, light/dark appearance, keyboard focus, zoom, and every navigation link. The support and deletion email is lumihair.help@outlook.com. Verify mailbox monitoring and request handling before publication.
+Open http://127.0.0.1:8098/. Check mobile and desktop widths, light/dark appearance, keyboard focus, zoom, and every navigation link. The support and deletion email is lumihair.help@outlook.com. Verify mailbox monitoring and request handling before publication.
 
 ## Required publication review
 
-Do not enable GitHub Pages or push draft content to a publishing branch. Complete every field and review in release.json, then remove the draft banners and noindex metadata. Never put private customer information, credentials, or support requests in this repository.
+Do not enable GitHub Pages or push draft content to a publishing branch. Complete the required publication review, then remove the draft banners and noindex metadata. Never put private customer information, credentials, or support requests in this repository.
 
 - The legal operator is Pacai Technologies LLC. The support and privacy email is lumihair.help@outlook.com. Resolve the remaining address requirements for Terms, governing state, and effective date before publication.
 - Verify actual Supabase hosting regions, backups, auth/security logs, and deletion schedules. Verify OpenAI model/account data controls, training opt-in settings, image safety retention exceptions, and processing regions. Do not promise zero retention without verification.
@@ -29,7 +29,7 @@ Do not enable GitHub Pages or push draft content to a publishing branch. Complet
 
 Before publishing, copy the approved Privacy Policy and Terms into archive/2026-09-13/privacy/index.html and archive/2026-09-13/terms/index.html. Adjust relative root links to ../../../ and add links on archive/index.html. Preserve these copies on future changes. Archive only approved policies; do not represent the present drafts as previously effective policies.
 
-For material updates, choose a new version consistently across release.json, the displayed HTML versions, app src/config/legal.ts, and a new database migration updating record_legal_acceptance and claim_hairstyle_preview_generation. Preserve old acceptance rows and archived documents. The app requires acceptance of the current terms/privacy version; AI disclosure approval applies separately to each new generation.
+For material updates, choose a new version consistently across the displayed HTML versions, app src/config/legal.ts, and a new database migration updating record_legal_acceptance and claim_hairstyle_preview_generation. Preserve old acceptance rows and archived documents. The app requires acceptance of the current terms/privacy version; AI disclosure approval applies separately to each new generation.
 
 ## Publish to GitHub Pages
 
