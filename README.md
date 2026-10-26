@@ -11,13 +11,13 @@ python3 check.py
 python3 -m http.server 8098 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8098/. Check mobile and desktop widths, light/dark appearance, keyboard focus, zoom, and every navigation link. The support and deletion email is lumihair.help@outlook.com. Verify mailbox monitoring and request handling before publication.
+Open http://127.0.0.1:8098/. Check mobile and desktop widths, light/dark appearance, keyboard focus, zoom, and every navigation link. The support and deletion email is lumihair.help@pacaitechnologies.com. Verify mailbox monitoring and request handling before publication.
 
 ## Required publication review
 
 Do not enable GitHub Pages or push draft content to a publishing branch. Complete the required publication review, then remove the draft banners and noindex metadata. Never put private customer information, credentials, or support requests in this repository.
 
-- The legal operator is Pacai Technologies LLC. The support and privacy email is lumihair.help@outlook.com. Resolve the remaining address requirements for Terms, governing state, and effective date before publication.
+- The legal operator is Pacai Technologies LLC. The support and privacy email is lumihair.help@pacaitechnologies.com. Resolve the remaining address requirements for Terms, governing state, and effective date before publication.
 - Verify actual Supabase hosting regions, backups, auth/security logs, and deletion schedules. Verify OpenAI model/account data controls, training opt-in settings, image safety retention exceptions, and processing regions. Do not promise zero retention without verification.
 - Verify RevenueCat identifiers, diagnostics, transaction retention, and customer deletion handling. The current app deletes Supabase data; it does not automatically erase RevenueCat/store records or cancel subscriptions.
 - Establish a monitored deletion mailbox. Verify ownership using the account's email or another appropriate recovery process; never ask for passwords. Track requests privately, apply relevant deadlines, delete through the trusted account-deletion workflow, address provider records/exceptions, and confirm completion. Document the actual handling period before publishing.
@@ -41,7 +41,7 @@ python3 check.py --release
 
 Once it passes, commit approved content to main and push. In GitHub choose Settings → Pages → Deploy from a branch → main → /(root). Enable/verify HTTPS. Expected base URL: https://pacaiteam.github.io/lumi-hair-legal/ (confirm the actual URL if the organization has a custom domain). The site uses relative links and supports the project subpath.
 
-Use /privacy/, /terms/, and /delete-account/ URLs in store metadata. For native RevenueCat paywalls, configure footer buttons as Navigate to → URL → Deep Link with `lumihair://legal/privacy` and `lumihair://legal/terms` (optional deletion information: `lumihair://legal/delete-account`). These open bundled in-app sheets. Keep HTTPS URLs for store metadata, project public policy settings, web paywalls, and older app builds without the routes. Target native deep-link buttons only to supported app versions. Verify both Expo Go and native paywall presentation.
+Use /support/ for the App Store Support URL. Use /privacy/, /terms/, and /delete-account/ URLs in store metadata. For native RevenueCat paywalls, configure footer buttons as Navigate to → URL → Deep Link with `lumihair://legal/privacy` and `lumihair://legal/terms` (optional deletion information: `lumihair://legal/delete-account`). These open bundled in-app sheets. Keep HTTPS URLs for store metadata, project public policy settings, web paywalls, and older app builds without the routes. Target native deep-link buttons only to supported app versions. Verify both Expo Go and native paywall presentation.
 
 Keep Pages disabled while placeholders remain. The branch-based Pages publisher itself does not run check.py: an operator must pass the release check before every publishing push. For a future enforced deployment gate, switch to a GitHub Actions publishing workflow rather than branch publishing.
 
