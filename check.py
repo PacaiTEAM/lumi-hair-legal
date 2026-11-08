@@ -32,7 +32,7 @@ class Page(HTMLParser):
             if not target or target.startswith('#'): continue
             parsed = urlsplit(target)
             if parsed.scheme or parsed.netloc:
-                if tag != 'a': errors.append(f'{self.path}: external asset {target}')
+                if tag != 'a' and not (tag == 'link' and attrs.get('rel') == 'canonical' and parsed.scheme == 'https' and parsed.netloc == 'pacaitechnologies.com' and parsed.path.startswith('/lumi-hair/')): errors.append(f'{self.path}: external asset {target}')
                 if parsed.scheme not in ('https', 'mailto'): errors.append(f'{self.path}: unsafe link {target}')
                 continue
             resolved = (self.path.parent / unquote(parsed.path)).resolve()
